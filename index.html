@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Interactive card details form</title>
+  <link rel="stylesheet" href="./styles.css">
+    <script defer src="script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <main>
+      <div class="forms">
+        <picture class="img__box">
+          <img
+            src="images/bg-main-desktop.png"
+            class="bg--img"
+            alt="background"
+          />
+          <source
+            srcset="images/bg-main-mobile.png 375w, images/bg-main-desktop.png 1440w"
+            sizes="(max-width: 375px) 375px, (min-width: 376px) 1440px"
+          />
+        </picture>
+        <form action="" class="form__box">
+          <div class="name__box gap">
+            <label class="input-name uppercase" for="card-name"
+              >Cardholder name</label
+            >
+            <input
+              type="text"
+              placeholder="e.g. Jane Appleseed"
+              id="card-name"
+              class="input__details"
+            />
+            <p class="error__name">Wrong format, letters only</p>
+            <p class="error__name-short">
+              Name is too short, must be at least 7 characters long
+            </p>
+          </div>
+          <div class="name__box gap">
+            <label class="input-name uppercase" for="card-number"
+              >Card number</label
+            >
+            <input
+              type="text"
+              name="card-number"
+              id="card-number"
+              class="input__details"
+              placeholder="e.g. 1234 5678 0123 0000"
+              maxlength="16"
+            />
+            <p class="error__number">Wrong format, numbers only</p>
+            <p class="error__num">Number is not complete</p>
+          </div>
+
+          <div class="info__box">
+            <div class="expiry gap">
+              <label class="expiry__text uppercase" for="expiry__month"
+                >Exp. Date (MM/YY)</label
+              >
+              <div class="expiry__box">
+                <div>
+                  <input
+                    type="text"
+                    name="month"
+                    id="expiry__month"
+                    placeholder="MM"
+                    class="input__details"
+                    maxlength="2"
+                  />
+                  <p class="error__month">Month is not valid</p>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="year"
+                    id="expiry__year"
+                    placeholder="YY"
+                    class="input__details"
+                    minlength="2"
+                    maxlength="2"
+                  />
+                  <p class="error__year">Year is not valid</p>
+                </div>
+              </div>
+              <p class="error__expiry">Wrong format, numbers only</p>
+            </div>
+            <div class="cvc__box gap">
+              <label class="cvc__text uppercase" for="cvc">Cvc</label>
+              <input
+                type="text"
+                name="cvc"
+                id="cvc"
+                placeholder="e.g. 123"
+                class="cvc input__details"
+                maxlength="3"
+              />
+              <p class="error__cvc">Wrong format, numbers only</p>
+              <p class="error__cvc-num">Number not complete</p>
+            </div>
+          </div>
+          <button class="btn">Confirm</button>
+        </form>
+        <div class="success">
+          <img
+            src="images/icon-complete.svg"
+            alt="success__logo"
+            class="success__logo"
+          />
+          <p class="success__heading">Thank you!</p>
+          <p class="success__text">We've added your card details</p>
+          <button class="btn continue">Continue</button>
+        </div>
+      </div>
+
+      <div class="front__card">
+        <img src="images/card-logo.svg" alt="card logo" class="card__logo" />
+        <div class="card__details">
+          <p class="details__number">0000 0000 0000 0000</p>
+          <div class="details__name-box">
+            <p class="details__name">Jane Appleseed</p>
+            <p class="details__expiry">
+              <span class="details__expiry--month">00</span>/<span
+                class="details__expiry--year"
+                >00</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="back__card">
+        <p class="back__number">000</p>
+      </div>
+    </main>
+ 
+</body>
+</html>
+
