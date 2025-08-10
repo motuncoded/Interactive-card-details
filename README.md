@@ -1,6 +1,6 @@
 # Frontend Mentor - Interactive Card Details Form Solution
 
-This is my solution to the [Interactive Card Details Form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). 
+This is my solution to the [Interactive Card Details Form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw).
 
 ## Table of Contents
 
@@ -28,8 +28,6 @@ Users should be able to:
 - View optimal layout across different devices
 - See interactive element states (hover, focus, active)
 
-
-
 ## My Process
 
 ### Built With
@@ -49,5 +47,9 @@ Key learnings from this project:
    ```javascript
    // Format card number with spaces every 4 digits
    function formatCardNumber(value) {
-     return value.replace(/\s+/g, '').replace(/(\d{4})/g, '$1 ').trim();
+     return value
+       .replace(/\s+/g, "")
+       .replace(/(\d{4})/g, "$1 ")
+       .trim();
    }
+   ```

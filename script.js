@@ -49,14 +49,6 @@ cardNumber.addEventListener("input", function () {
     )} ${cardNumber.value.slice(8, 12)} ${cardNumber.value.slice(12, 16)}`;
     cardDetailsNumber.textContent = num;
   }
-
-  // if (isNaN(cardNumber.value)) {
-  //   errorMessage.style.display = "block";
-  //   cardNumber.innerText = "";
-  // } else {
-  //   errorMessage.style.display = "none";
-
-  // }
 });
 
 // THIS IS FOR THE CARD EXPIRY MONTH

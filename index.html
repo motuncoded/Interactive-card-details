@@ -1,19 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <title>Interactive card details form</title>
-  <link rel="stylesheet" href="./styles.css">
+    <title>Interactive card details form</title>
+    <link rel="stylesheet" href="./styles.css" />
     <script defer src="script.js"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-</head>
-<body>
-
-  <main>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
       <div class="forms">
         <picture class="img__box">
           <img
@@ -22,11 +27,14 @@
             alt="background"
           />
           <source
-            srcset="images/bg-main-mobile.png 375w, images/bg-main-desktop.png 1440w"
+            srcset="
+              images/bg-main-mobile.png   375w,
+              images/bg-main-desktop.png 1440w
+            "
             sizes="(max-width: 375px) 375px, (min-width: 376px) 1440px"
           />
         </picture>
-        <form action="" class="form__box">
+        <form action="" class="form form__box">
           <div class="name__box gap">
             <label class="input-name uppercase" for="card-name"
               >Cardholder name</label
@@ -137,7 +145,5 @@
         <p class="back__number">000</p>
       </div>
     </main>
- 
-</body>
+  </body>
 </html>
-
